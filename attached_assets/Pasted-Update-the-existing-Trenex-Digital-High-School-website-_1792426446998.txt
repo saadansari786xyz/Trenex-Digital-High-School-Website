@@ -1,0 +1,44 @@
+Update the existing Trenex Digital High School website hero section to use a **smooth, cinematic, multi-video background slideshow instead of a single looping video**. Keep the current design, logo, navigation, text, buttons, colors, and layout exactly as they are in the reference screenshot. Only improve the hero background video experience.
+
+### Hero Background Video Sequence
+Create a continuous, seamless-feeling video carousel featuring these scenes:
+
+1. **Teacher teaching:** A teacher explaining a lesson on the classroom whiteboard while students listen.
+2. **Young children learning:** Small children studying, drawing, reading, and doing classroom activities.
+3. **Hands-on activities:** Students participating in creative projects, experiments, and group learning.
+4. **Library scene:** A student walking through the library and taking a book from a bookshelf.
+5. **Coding class:** Students working on computers with realistic programming and coding activities on screen.
+6. **Video editing:** Students editing videos on desktop computers using professional-looking editing timelines.
+7. **Graphic design:** Students creating digital artwork and designs on computers.
+8. **Teacher helping students:** A teacher assisting students individually with their assignments.
+9. **School campus:** Students walking through the campus, interacting, and enjoying school life.
+
+### Smooth Video Transitions
+- Automatically switch between multiple video clips in a continuous loop.
+- Display each clip for approximately 5–7 seconds before transitioning.
+- Use a smooth crossfade transition lasting around 1–1.5 seconds, with subtle opacity and scale effects.
+- Never abruptly cut between clips, flash a blank screen, or show a black background between videos.
+- Preload the next video where practical so transitions feel seamless.
+- Keep the sequence running continuously and restart from the first clip after the last one.
+- Use React state and CSS transitions or a lightweight animation approach. Avoid heavy animation libraries unless already installed.
+- Make sure the first video appears immediately and the hero does not wait for every video to download.
+
+### Visual Appearance
+- Keep the videos full-screen within the existing hero section using `object-fit: cover`.
+- Apply a subtle dark translucent overlay or gradient so the white headline and navigation remain readable across every scene.
+- Keep the existing headline: **“Learn Today. Lead Tomorrow.”**
+- Keep all current buttons, text positioning, and the yellow admissions button unchanged.
+- Ensure videos fill the background without stretching, flickering, or exposing empty edges.
+- Use real, high-quality, school-appropriate footage that matches each scene. Do not use unrelated footage or static images as the primary video background.
+- Organize video sources in a simple array so clips can easily be replaced later.
+
+### Performance and Reliability
+- Use optimized MP4/WebM clips with muted audio, `playsInline`, and autoplay where supported.
+- Respect browser autoplay restrictions and reduced-motion accessibility preferences.
+- Handle video loading errors gracefully by skipping unavailable clips or showing a suitable fallback image.
+- On mobile and slow connections, use fewer or lower-resolution clips to maintain performance.
+- Avoid downloading large video files unnecessarily and keep the implementation lightweight to conserve Replit resources.
+- Do not add a backend, database, paid API, or unnecessary dependencies.
+
+### Final Requirements
+Implement this directly in the existing project; do not rebuild the entire website or change other sections. Test the hero on desktop and mobile. The final result should feel like a premium modern school website, with classroom learning, children’s activities, library visits, coding, video editing, and other educational scenes transitioning smoothly in an endless video loop. **If real video assets are not already available, use reliable, replaceable video URLs or lightweight local assets, and clearly organize the video list for easy future replacement.**
