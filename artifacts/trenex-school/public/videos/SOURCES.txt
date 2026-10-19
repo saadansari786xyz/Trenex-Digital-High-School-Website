@@ -1,0 +1,5 @@
+Video: public/videos/classroom-hero.mp4
+Source: https://www.pexels.com/video/teacher-in-a-class-5734826/
+Creator: Pavel Danilyuk
+License: Pexels License (free stock video)
+Original clip: 1920x1080, 11.8 seconds. Optimized locally to 1280x720, silent H.264 for a lightweight looping hero background.

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Trenex Digital High School"
+description = "A polished, responsive portfolio website for a fictional school combining academic learning with digital skills education. Includes eight informative pages, image-led storytelling, interactive news and gallery experiences, and a demo enquiry form."
+version = "1.0.0"
+id = "artifacts/trenex-school"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22051
+
+[services.development]
+run = "pnpm --filter @workspace/trenex-school run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/trenex-school", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/trenex-school/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22051"
+BASE_PATH = "/"

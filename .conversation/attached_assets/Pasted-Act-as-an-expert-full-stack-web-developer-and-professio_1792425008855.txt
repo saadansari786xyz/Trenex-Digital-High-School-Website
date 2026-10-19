@@ -1,0 +1,106 @@
+Act as an expert full-stack web developer and professional UI/UX designer. Build a complete, responsive portfolio demo website for **Trenex Digital High School**, a fictional educational institution combining normal school education with digital skills and freelancing education.
+
+**Reference:** https://thecityschool.edu.pk/
+
+Use the reference screenshot and website for design inspiration. Create a similarly premium, modern, image-rich school website with original Trenex branding. Do not copy the reference website's logo, text, or copyrighted images.
+
+### 1. Design & Branding
+- Royal blue: `#21478F`
+- Deep navy: `#14284B`
+- White: `#FFFFFF`
+- Light grey: `#F5F7FA`
+- Yellow accents: `#FFD900`
+- Professional typography, spacious layouts, clean grids, realistic photography, subtle shadows and smooth hover effects.
+- The website must look like a professionally designed school website, not a generic AI template.
+
+### 2. Header & Hero
+Create a transparent navigation bar over a full-width hero, with a Trenex logo placeholder, navigation links, admissions CTA, responsive mobile menu and sticky header.
+
+Hero requirements:
+- Large school-life background video with a high-quality image fallback.
+- Use a verified, licensed or locally available video asset; never use broken or guessed URLs.
+- Dark overlay for readable text.
+- Heading: **"Learn Today. Lead Tomorrow."**
+- Supporting text: "Academic excellence, creative thinking, and digital skills for a brighter future."
+- Buttons: "Explore Academics" and "Discover Digital Skills".
+
+### 3. Homepage Sections
+Build the complete homepage with these sections in order:
+
+1. Hero video banner.
+2. About Trenex with school photography, mission, vision and educational approach.
+3. Quick-access cards for Academics, Digital Skills, Campus Life and Admissions.
+4. Academic programmes: Early Years, Primary, Middle School and Secondary School.
+5. Digital Skills & Freelancing section.
+6. Why Choose Trenex feature cards.
+7. Campus Life and Facilities image section.
+8. News & Events image carousel.
+9. Student Projects showcase.
+10. School Gallery with image lightbox.
+11. Admissions call-to-action banner.
+12. Contact/enquiry form.
+13. Professional multi-column footer.
+
+### 4. Digital Skills Section
+Create seven separate, visually attractive cards with relevant images or professional icons:
+
+- **Web Development** — website design and development.
+- **Software Development** — programming and software solutions.
+- **App Development** — mobile applications and app interfaces.
+- **Graphic Designing** — branding, posters and visual communication.
+- **Video Editing** — storytelling, short-form videos and editing.
+- **Digital Marketing** — digital campaigns, content and social media.
+- **SEO** — keyword research, content optimization and search visibility.
+
+Keep digital education distinct from conventional school academics.
+
+### 5. Images, Sliders & Gallery
+Use relevant, realistic school photography throughout the website: campus buildings, classrooms, students learning, teachers, libraries, sports, science activities, computer labs and educational events. Use relevant technology and creative-work imagery in the digital skills section.
+
+- Use actual accessible image assets or verified image URLs.
+- Organize images so they can easily be replaced later.
+- Use appropriate aspect ratios, object-fit cropping, lazy loading and image fallbacks.
+- Do not repeat the same image across every section.
+- Never copy images from the reference website.
+- Build a responsive News & Events carousel with working arrows, pagination and touch swipe.
+- Build a responsive gallery with a functional lightbox and previous/next controls.
+- Create attractive image-led cards and promotional banners with consistent spacing.
+- Use a replaceable hero video component with a poster image fallback.
+
+### 6. Additional Pages
+Create functional, consistently designed pages for:
+- Home
+- About Us
+- Academics
+- Digital Skills
+- Campus Life
+- Admissions
+- News & Events
+- Contact Us
+
+Use reusable components and working internal navigation. Each page must have meaningful content, not just an empty template.
+
+### 7. Functionality
+- Responsive desktop, tablet and mobile navigation.
+- Working buttons and internal links.
+- Functional carousels and gallery lightbox.
+- Contact form with name, email, phone, programme selection and message.
+- Basic form validation and clear success/error feedback.
+- Since this is a fictional portfolio demo, do not claim form submissions reach a real school.
+- Add a discreet footer note: "Fictional educational website concept created for portfolio demonstration."
+
+Do not invent real addresses, phone numbers, accreditations, school achievements or genuine testimonials.
+
+### 8. Technical Requirements
+Use React, TypeScript and Vite if supported by the existing environment. Use clean CSS or the project's existing styling framework. Build reusable header, footer, card, carousel and section components.
+
+Keep the project lightweight and avoid unnecessary dependencies, backend services, databases, authentication, large downloads or complex animations. Focus on a complete, visually polished foundation with functional interactions.
+
+Ensure responsive layouts at mobile, tablet and desktop sizes. Prevent horizontal overflow, overlapping text, broken images and nonfunctional controls. Use semantic HTML, accessible contrast, keyboard navigation and reduced-motion support.
+
+### 9. Build & Verify
+First inspect the existing project, then implement the complete website directly in the codebase. Do not return only a plan or screenshot.
+
+Run the available build checks, fix obvious errors and verify that navigation, responsive layouts, image sliders, gallery and form interactions work.
+
+**Final goal:** A premium, image-rich, professional Trenex Digital High School website inspired by The City School's overall presentation, with a full homepage, multiple pages, relevant imagery, hero video support, working sliders and a clean, maintainable foundation ready for further enhancement in Google AI Studio.
