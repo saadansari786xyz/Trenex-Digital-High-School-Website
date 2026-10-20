@@ -1,0 +1,23 @@
+Continue working on my existing **Trenex Digital High School** website. The previous attempt used Replit credits for searching video clips, so now prioritize a simple, lightweight implementation without unnecessary research or rebuilding the website.
+
+**Task: Upgrade only the existing hero background from one video to a smooth, continuous multi-video slideshow.**
+
+### Requirements
+1. First inspect the existing project and reuse its current framework, components, styles, and assets. Do not rebuild the website or modify unrelated sections.
+2. Create a replaceable array of video URLs featuring these educational scenes:
+   - Teacher teaching students in a classroom.
+   - Young children studying, drawing, and doing activities.
+   - Students reading and taking books from library shelves.
+   - Students coding and programming on computers.
+   - Students doing video editing and graphic design.
+   - Teachers helping students with their work.
+   - Students participating in group projects and school activities.
+3. If suitable video assets already exist, reuse them. Otherwise, use a small number of reliable, freely accessible educational stock-video URLs. Do not spend credits on extensive web searches or download large collections of videos.
+4. Implement automatic looping with a smooth crossfade between clips approximately every 5–7 seconds. Preload only the next clip when practical, and prevent black screens, flickering, abrupt cuts, or blank gaps during transitions.
+5. Keep the existing hero headline, logo, navigation, buttons, layout, and yellow/white color scheme unchanged. Preserve a subtle dark overlay to maintain text readability.
+6. Use muted, autoplaying, inline video playback with responsive `object-fit: cover`. Handle loading failures gracefully and provide a suitable fallback image if videos cannot play.
+7. Respect mobile performance, browser autoplay restrictions, and reduced-motion preferences. Avoid unnecessary libraries, backend services, APIs, and large downloads.
+8. Keep the code clean and easy to maintain, with comments explaining how to replace or add video URLs.
+9. Run the available build or development checks and fix any errors caused by this change.
+
+**Important:** Make the actual code changes in the existing project, not just a plan or explanation. Focus exclusively on completing and testing the multi-video hero. Minimize tool calls and credit usage.

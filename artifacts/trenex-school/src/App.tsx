@@ -1,13 +1,13 @@
 import { type FormEvent, type ReactNode, useEffect, useRef, useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ErrorBoundary } from '@/components/error-boundary';
+import HeroVideoSlideshow from '@/components/HeroVideoSlideshow';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { Route, Switch, Link, useLocation, Router as WouterRouter } from 'wouter';
 import { ArrowLeft, ArrowRight, Braces, Code2, Compass, Menu, Palette, Search, Smartphone, Video, X } from 'lucide-react';
 
 const queryClient = new QueryClient();
-const HERO_VIDEO_SRC = '/videos/classroom-hero.mp4';
 
 const navItems = [
   ['About us', '/about-us'], ['Academics', '/academics'], ['Digital skills', '/digital-skills'],
@@ -164,7 +164,7 @@ function NewsCarousel() {
 
 function Home() {
   return <main>
-    <section className="hero" aria-label="Welcome to Trenex">{HERO_VIDEO_SRC && <video className="hero-video" autoPlay muted loop playsInline poster="/images/hero-classroom.jpg" aria-hidden="true"><source src={HERO_VIDEO_SRC} type="video/mp4" /></video>}<div className="container hero-grid"><div className="eyebrow">A place to grow into what’s next</div><h1>Learn Today.<br />Lead Tomorrow.</h1><p>Academic excellence, creative thinking, and digital skills for a brighter future.</p><div className="hero-actions"><Link className="btn" href="/academics" data-testid="link-hero-academics">Explore Academics <ArrowRight size={16} /></Link><Link className="btn btn-outline" href="/digital-skills" data-testid="link-hero-digital-skills">Discover Digital Skills</Link></div></div><div className="hero-note">Strong foundations. New possibilities.</div></section>
+    <section className="hero" aria-label="Welcome to Trenex"><HeroVideoSlideshow /><div className="container hero-grid"><div className="eyebrow">A place to grow into what’s next</div><h1>Learn Today.<br />Lead Tomorrow.</h1><p>Academic excellence, creative thinking, and digital skills for a brighter future.</p><div className="hero-actions"><Link className="btn" href="/academics" data-testid="link-hero-academics">Explore Academics <ArrowRight size={16} /></Link><Link className="btn btn-outline" href="/digital-skills" data-testid="link-hero-digital-skills">Discover Digital Skills</Link></div></div><div className="hero-note">Strong foundations. New possibilities.</div></section>
     <section className="section"><div className="container about-grid"><div className="photo-stack"><img src="/images/classroom-learning.jpg" alt="Students learning together at a classroom table" /><div className="photo-label">LEARNING WITH PURPOSE</div></div><div className="split-copy"><div className="kicker">A school for the whole learner</div><h2>Grounded in learning.<br />Open to possibility.</h2><p>Trenex brings a thoughtful academic education together with practical digital learning. We believe strong foundations and future-ready skills belong side by side.</p><p>Here, students are encouraged to ask thoughtful questions, take creative risks and learn how to turn an idea into something useful.</p><LearningPurpose /><Link href="/about-us" className="link-arrow" data-testid="link-about-story">Get to know Trenex <ArrowRight size={16} /></Link></div></div></section>
     <section className="quicklinks"><div className="container quick-grid">{[['Academic programmes','Learning at every stage','/academics'],['Digital skills','Make ideas work','/digital-skills'],['Campus life','A place to belong','/campus-life'],['Admissions','Plan your next step','/admissions']].map(([title, sub, href], i) => <Link className="quick-link" href={href} key={title} data-testid={`link-quick-${i}`}><span><b>{title}</b><small>{sub}</small></span><ArrowRight size={17} /></Link>)}</div></section>
     <section className="section programmes"><div className="container"><SectionTitle eyebrow="Academic programmes" title="Ready for every next step." copy="A connected learning journey that meets students where they are and helps them discover where they can go." /><div className="program-grid">{programmes.map(p => <Link key={p.name} href="/academics" className="program-card" data-testid={`card-program-${p.number}`}><img src={`/images/${p.img}`} alt="" loading="lazy" /><span>{p.name}<small>{p.text}</small></span></Link>)}</div><Link href="/academics" className="link-arrow" data-testid="link-all-programmes">Explore academic programmes <ArrowRight size={16} /></Link></div></section>

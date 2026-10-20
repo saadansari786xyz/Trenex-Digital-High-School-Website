@@ -1,5 +1,15 @@
-Video: public/videos/classroom-hero.mp4
-Source: https://www.pexels.com/video/teacher-in-a-class-5734826/
-Creator: Pavel Danilyuk
-License: Pexels License (free stock video)
-Original clip: 1920x1080, 11.8 seconds. Optimized locally to 1280x720, silent H.264 for a lightweight looping hero background.
+The hero clips are short, silent, local H.264 versions of free Pexels videos. Desktop versions are 1280x720; mobile/low-bandwidth versions are 640x360. Each clip is used for about 5.6 seconds with a 1.25-second crossfade. Replace the matching files in `scenes/` and update the clip array in `src/components/HeroVideoSlideshow.tsx` when changing footage.
+
+| Scene | Local desktop clip | Creator and source page |
+| --- | --- | --- |
+| Teacher teaching | `classroom-hero.mp4` | Pavel Danilyuk — https://www.pexels.com/video/teacher-in-a-class-5734826/ |
+| Children learning | `scenes/desktop/children-learning.mp4` | RDNE Stock project — https://www.pexels.com/video/kids-learning-in-school-6935509/ |
+| Hands-on science | `scenes/desktop/science-exploration.mp4` | MART PRODUCTION — https://www.pexels.com/video/children-doing-experiments-8471676/ |
+| Library visit | `scenes/desktop/library-visit.mp4` | Orange Tomato — https://www.pexels.com/video/girl-taking-books-from-shelf-in-library-11023764/ |
+| Computer and coding class | `scenes/desktop/computer-coding.mp4` | Gustavo Fring — https://www.pexels.com/video/kids-using-computers-5892377/ |
+| Video editing | `scenes/desktop/video-editing.mp4` | Ludovic Delot — https://www.pexels.com/video/a-computer-screen-showing-a-video-editing-screen-15517230/ |
+| Graphic design | `scenes/desktop/graphic-design.mp4` | ArtHouse Studio — https://www.pexels.com/video/a-woman-making-a-graphic-design-7204567/ |
+| Teacher support | `scenes/desktop/teacher-support.mp4` | Max Fischer — https://www.pexels.com/video/teacher-guiding-a-student-5200016/ |
+| Campus life | `scenes/desktop/campus-life.mp4` | Gokuldham Nar — https://www.pexels.com/video/students-walking-to-school-campus-35724453/ |
+
+All source pages identify the video as free under the Pexels License: https://www.pexels.com/license/. Poster frames are stored in `scenes/posters/`.
