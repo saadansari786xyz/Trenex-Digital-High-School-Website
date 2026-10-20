@@ -5,7 +5,7 @@ import HeroVideoSlideshow from '@/components/HeroVideoSlideshow';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { Route, Switch, Link, useLocation, Router as WouterRouter } from 'wouter';
-import { ArrowLeft, ArrowRight, Braces, Code2, Compass, Menu, Palette, Search, Smartphone, Video, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Braces, Code2, Compass, Menu, Palette, Search, Smartphone, Video, Workflow, X } from 'lucide-react';
 
 const queryClient = new QueryClient();
 
@@ -27,6 +27,7 @@ const skills = [
   { title: 'Video Editing', desc: 'Shape footage, sound and pacing into purposeful visual stories.', Icon: Video },
   { title: 'Digital Marketing', desc: 'Understand audiences, content and responsible online campaigns.', Icon: Compass },
   { title: 'SEO', desc: 'Learn how useful content and clear structure help people find information.', Icon: Search },
+  { title: 'AI Automation', desc: 'Automate repetitive tasks and build smarter workflows using AI tools and automation technologies.', Icon: Workflow },
 ];
 const stories = [
   { date: 'Learning in action', title: 'A classroom where questions lead the way', desc: 'From discussion to discovery, students practise making connections across what they learn.', img: 'classroom-learning.jpg' },
