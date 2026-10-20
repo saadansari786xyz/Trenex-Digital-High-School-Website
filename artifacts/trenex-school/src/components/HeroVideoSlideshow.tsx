@@ -238,6 +238,10 @@ function HeroVideoSlideshow() {
   ) => {
     if (index === null || reducedMotion || playbackUnavailable) return null;
     const clip = HERO_CLIPS[index];
+    const useMobileSource =
+      lowBandwidth &&
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 700px)').matches;
     const isActive = slot === activeSlot && index === activeIndex;
     const isAvailable = !unavailableClips.has(index);
     const classes = [
@@ -250,10 +254,10 @@ function HeroVideoSlideshow() {
 
     return (
       <video
-        key={`${slot}-${index}-${lowBandwidth ? 'mobile' : 'desktop'}`}
+        key={`${slot}-${index}-${useMobileSource ? 'mobile' : 'desktop'}`}
         ref={videoRef}
         className={classes}
-        src={lowBandwidth ? clip.mobileSrc : clip.desktopSrc}
+        src={useMobileSource ? clip.mobileSrc : clip.desktopSrc}
         poster={clip.poster}
         autoPlay={isActive && isAvailable}
         muted
