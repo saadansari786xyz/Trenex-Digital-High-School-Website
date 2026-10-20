@@ -197,7 +197,7 @@ function DetailPage({ path }: { path: string }) {
   const page = pageContent[path];
   const [location] = useLocation();
   useEffect(() => {
-    document.title = `${page.eyebrow} | Trenex Digital High School`;
+    document.title = 'Trenex Digital High School';
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute('content', page.description);
     window.scrollTo(0, 0);
@@ -214,7 +214,7 @@ function DetailPage({ path }: { path: string }) {
 }
 
 function HomeWithMeta() {
-  useEffect(() => { document.title = 'Trenex Digital High School | Learn Today. Lead Tomorrow.'; }, []);
+  useEffect(() => { document.title = 'Trenex Digital High School'; }, []);
   return <Home />;
 }
 function Shell({ children }: { children: ReactNode }) { return <div className="site-shell"><a className="skip-link" href="#main-content">Skip to content</a><Header />{children}<Footer /></div>; }
