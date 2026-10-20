@@ -1,0 +1,48 @@
+Make the existing **Trenex Digital High School** website fully responsive across all devices. Inspect the current project and implement the changes directly without rebuilding the website.
+
+### 1. Remove the top announcement strip on mobile
+- The current top strip containing “A school for thoughtful learners and confident makers” and “Curiosity • Creativity • Capability” looks crowded on mobile.
+- Hide this entire strip on mobile screens below 768px to give the main header and hero section more space.
+- On desktop, keep it only if it looks clean and well-spaced; otherwise, remove it consistently across all screen sizes.
+- Do not replace it with another banner.
+
+### 2. Make the entire website responsive
+Test and optimize the existing website for:
+- Small mobile phones: 320px–375px.
+- Standard mobile phones: 376px–767px.
+- Tablets: 768px–1024px.
+- Laptops and desktops: 1025px and above.
+
+### 3. Mobile header
+- Keep the Trenex logo and school name clear and readable.
+- Align the logo to the left and the hamburger menu to the right.
+- Prevent the logo, school name, and menu icon from overlapping or overflowing.
+- Ensure the mobile navigation opens and closes smoothly and all menu links are accessible.
+- Keep the header compact without making the logo too small.
+
+### 4. Mobile hero section
+- Keep the existing headline “Learn Today. Lead Tomorrow.”
+- Adjust the headline font size, line height, margins, and text width for each screen size so it wraps naturally without awkward breaks.
+- Keep the description readable and prevent text from overflowing.
+- Stack the “Explore Academics” and “Discover Digital Skills” buttons vertically on narrow screens, with comfortable spacing and suitable touch targets.
+- Ensure both buttons fit within the screen width.
+- Keep the background video or image properly cropped using `object-fit: cover`, with the main subject visible behind the text.
+- Maintain a suitable dark overlay so white text remains readable.
+- Prevent horizontal scrolling, unwanted whitespace, and content being cut off at the bottom.
+- Use a sensible minimum hero height and allow content to fit naturally on short screens.
+
+### 5. All other pages and sections
+- Make navigation, cards, image sliders, galleries, forms, footer, grids, and all existing sections adapt to smaller screens.
+- Convert multi-column layouts into suitable one- or two-column layouts on mobile.
+- Ensure images and videos scale without distortion.
+- Keep carousels usable with touch gestures and ensure buttons and links are easy to tap.
+- Avoid fixed widths and heights that cause overflow on mobile.
+
+### 6. Implementation and testing
+- Reuse the existing framework and styles. Prefer responsive CSS media queries, flexible layouts, CSS Grid, and Flexbox.
+- Do not introduce unnecessary dependencies or redesign the website.
+- Preserve the current branding, logo, colors, content, and functionality.
+- Check for horizontal overflow and layout issues at the breakpoints listed above.
+- Run the available build checks and fix any errors caused by these changes.
+
+**Important:** Make the actual changes in the existing project. Prioritize a clean mobile experience, especially the compact header and hero section, while keeping the desktop design attractive. Keep the implementation lightweight to conserve Replit credits.

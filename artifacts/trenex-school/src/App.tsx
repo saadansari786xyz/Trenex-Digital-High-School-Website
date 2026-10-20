@@ -58,10 +58,10 @@ function Header() {
           <img src="/trenex-logo.png" alt="Trenex Digital High School logo" />
           <span>TRENEX<small>DIGITAL HIGH SCHOOL</small></span>
         </Link>
-        <button className="menu-button" type="button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} onClick={() => setOpen(!open)} data-testid="button-menu">
+        <button className="menu-button" type="button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)} data-testid="button-menu">
           {open ? <X size={23} /> : <Menu size={23} />}
         </button>
-        <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Main navigation">
+        <nav id="main-navigation" className={`nav-links ${open ? 'open' : ''}`} aria-label="Main navigation">
           {navItems.map(([label, href]) => <Link key={href} href={href} aria-current={path === href ? 'page' : undefined} data-testid={`link-nav-${href.slice(1)}`} onClick={() => setOpen(false)}>{label}</Link>)}
         </nav>
         <Link className="nav-cta" href="/admissions" data-testid="link-nav-admissions">Explore admissions <ArrowRight size={15} /></Link>
