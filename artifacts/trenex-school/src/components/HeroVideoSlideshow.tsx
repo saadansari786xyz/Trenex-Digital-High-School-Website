@@ -88,7 +88,6 @@ function readLowBandwidthPreference() {
     }
   ).connection;
   return (
-    window.matchMedia('(max-width: 700px)').matches ||
     connection?.saveData === true ||
     ['slow-2g', '2g', '3g'].includes(connection?.effectiveType ?? '')
   );
